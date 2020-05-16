@@ -1,0 +1,18 @@
+<app-sidebar></app-sidebar>
+
+<div class="main-wrapper">
+  <div class="burger-menu" (click)="openNav()">
+    <img src="../../../assets/images/bars.svg" alt="">
+  </div>
+  <div class="sidebar-hover-wrapper" (mouseenter)="openNav()"></div>
+  <div id="main" class="main-content-wrapper">
+<!--    <div class="timezone-section">-->
+<!--      <select>-->
+<!--        <option>e</option>-->
+<!--      </select>-->
+<!--    </div>-->
+    <div class="clock-wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

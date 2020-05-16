@@ -1,0 +1,10 @@
+<div class="binary-clock-wrapper">
+  <div class="unit-wrapper" *ngFor="let a of binaryValues; let binaryIndex=index">
+    <span class="unit-value">{{reverseString(a)}}</span>
+    <div class="binary-unit-representation" *ngFor="let b of binaryRepresentLength; let binaryRepresentIndex=index;"
+         [ngClass]="a.charAt(binaryRepresentIndex) === '1' ? getActiveClass(binaryIndex) : ''">
+      {{ getPowerOf(binaryRepresentIndex) }}
+    </div>
+    <span class="unit-title">{{sectionTitle[binaryIndex]}}</span>
+  </div>
+</div>

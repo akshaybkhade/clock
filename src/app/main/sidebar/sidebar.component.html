@@ -1,0 +1,9 @@
+<div id="mySidenav" class="sidenav-wrapper" (mouseleave)="closeNav()">
+  <button class="close-sidebar" (click)="closeNav()">&times;</button>
+  <div class="sidenav-list">
+    <div class="sidebar-title">Clock Types</div>
+    <button [routerLink]="['analog']">Analog</button>
+    <button [routerLink]="['digital']">Digital</button>
+    <button [routerLink]="['binary']">Binary</button>
+  </div>
+</div>

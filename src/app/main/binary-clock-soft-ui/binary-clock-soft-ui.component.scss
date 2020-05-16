@@ -1,0 +1,64 @@
+.binary-clock-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #091921;
+
+  .unit-wrapper {
+    background: transparent;
+    width: 70px;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    text-align: center;
+    color: white;
+
+    @media screen and (min-width: 320px) and (max-width: 992px) {
+      width: 50px;
+    }
+
+    .unit-title {
+      font-size: 1.8em;
+      font-weight: 900;
+      color: #dedede;
+    }
+    .unit-value {
+      font-size: 1.2em;
+    }
+
+    .binary-unit-representation {
+      background: #929292;
+      margin: 20px 0px;
+      height: 80px;
+      border-radius: 10px;
+      color: #959595;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 15px 15px 30px #08151c, -15px -15px 30px #0a1d26;
+      background: linear-gradient(145deg, #0a1b23, #08171e);
+
+      @media screen and (min-width: 320px) and (max-width: 992px) {
+        height: 60px;
+      }
+    }
+
+    .hr-active {
+      background: #64f6fe;
+      box-shadow: 15px 15px 30px #08151c, -15px -15px 30px #0a1d26, inset 25px 25px 25px #55d1d8, inset -25px -25px 25px #73ffff;
+      color: black;
+    }
+    .min-active {
+      background: #76df12;
+      box-shadow: 15px 15px 30px #08151c, -15px -15px 30px #0a1d26, inset 25px 25px 25px #64be0f, inset -25px -25px 25px #88ff15;
+      color: black;
+    }
+    .sec-active {
+      background: #ed75c2;
+      box-shadow: 15px 15px 30px #08151c, -15px -15px 30px #0a1d26, inset 25px 25px 25px #c963a5, inset -25px -25px 25px #ff87df;
+      color: black;
+    }
+  }
+}
