@@ -30,7 +30,7 @@
         width: 140px;
         height: 120px;
         //background: linear-gradient(180deg, #000000, #c3e40d);
-        background: #c3e40d;
+        //background: #c3e40d;
         color: black;
         font-weight: 300;
         display: flex;
@@ -52,7 +52,7 @@
           font-weight: 500;
           z-index: 9;
           box-shadow: none;
-          background: #c3e40d;
+          //background: #c3e40d;
           color: black;
           text-transform: uppercase;
         }
@@ -60,13 +60,13 @@
     }
 
     .hour-section {
-
+      background: #ed75c2;
     }
     .minute-section {
-
+      background: #64f6fe;
     }
     .second-section {
-
+      background: #c3e40d;
     }
   }
 }

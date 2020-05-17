@@ -10,17 +10,25 @@ export class DigitalClockSoftUiComponent implements OnInit {
   min;
   hr;
   sec;
+  // batterInfo;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.setTimeDetails();
     setInterval(() => {
-      const date = new Date();
-      this.min = date.getMinutes();
-      this.hr = date.getHours();
-      this.sec = date.getSeconds();
-    }, 1);
+      this.setTimeDetails();
+    }, 1000);
+    // navigator.getBattery().then((data) => {
+    //   this.batterInfo = data;
+    // });
+  }
 
+  setTimeDetails() {
+    const date = new Date();
+    this.min = String(date.getMinutes()).padStart(2, '0');
+    this.hr = String(date.getHours()).padStart(2, '0');
+    this.sec = String(date.getSeconds()).padStart(2, '0');
   }
 
 }

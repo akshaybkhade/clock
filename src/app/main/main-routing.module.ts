@@ -21,8 +21,17 @@ const routes: Routes = [
       {
         path: 'binary',
         component: BinaryClockSoftUiComponent
+      },
+      {
+        path: '',
+        redirectTo: 'analog',
+        pathMatch: 'full'
       }
     ]
+  },
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];
 

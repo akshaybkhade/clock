@@ -6,6 +6,11 @@ const routes: Routes = [
   {
     path: 'clock',
     loadChildren: () => import('./main/main.module').then(m => m.MainModule)
+  },
+  {
+    path: '**',
+    redirectTo: '/clock',
+    pathMatch: 'full'
   }
 ];
 
